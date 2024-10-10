@@ -1,0 +1,263 @@
+/*
+div {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+}
+
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #156082;
+}
+
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #197098;
+}
+
+.active {
+    background-color: #104963;
+}
+
+li {
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+h2 {
+    text-align: center;
+    color: #156082;
+    padding: 25px;
+    font-size: 40px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #156082;
+    padding: 40px;
+    padding-bottom: 100px;
+    text-align: left;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+    color: #156082;
+}
+
+.quote {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding: 110px 25px 110px 25px;
+    background-color: #156082;
+}
+
+h3 {
+    text-align: center;
+    color: #156082;
+    padding: 50px 30px 50px 30px;
+    font-size: 35px;
+}
+
+.hrblogi1 {
+    border: 1px solid #156082;
+}
+
+.hrblogi2 {
+    border: 1px solid #156082;
+}
+
+.hrblogi3 {
+    border: 1px solid #156082;
+}
+
+h4 {
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.blogipreview {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+a.linkki:link {
+    color: #156082;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.linkki:visited {
+    color: #6dc1e7;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.linkki:hover {
+    color: #104963;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a.linkki:active {
+    color: #6dc1e7;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.row {
+    width: 90%;
+    margin: auto;
+    font-size: 19;
+}
+
+footer {
+    background-color: #156082;
+    color: white;
+    padding: 30px;
+    margin: 0px;
+}
+
+.footertext {
+    text-align: center;
+    padding: 30px;
+    font-size: 17px;
+}
+
+.footercolumn {
+    text-align: center;
+    word-spacing: 12px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@media only screen and (min-width: 650px) {
+    li {
+        float: left;
+    }
+
+    body {
+        width: 75%;
+        margin: auto;
+        font-size: 18px;
+        color: #156082;
+    }
+
+    p {
+        text-align: left;
+        font-size: 18px;
+        color: #156082;
+        padding: 40px;
+        padding-bottom: 50px;
+    }
+
+    .quote {
+        color: white;
+        font-size: 22px;
+        text-align: center;
+        padding: 75px 25px 75px 25px;
+        background-color: #156082;
+    }
+
+    h3 {
+        text-align: center;
+        color: #156082;
+        padding: 30px;
+        font-size: 35px;
+    }
+
+    footer {
+        background-color: #156082;
+        color: white;
+        padding: 30px;
+        margin: 0px;
+        margin-top: 50px;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        li {
+            float: left;
+        }
+
+        body {
+            width: 50%;
+            margin: auto;
+            font-size: 18px;
+            color: #156082;
+        }
+
+        p {
+            text-align: left;
+            font-size: 18px;
+            color: #156082;
+            padding: 40px;
+            padding-bottom: 50px;
+        }
+
+        .hrblogi2 {
+            border: 1px solid #156082;
+            visibility: hidden;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .row {
+            width: 100%;
+            text-align: center;
+        }
